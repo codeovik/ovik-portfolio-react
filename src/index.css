@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+:root {
+  --primary-color: #9b00e8;
+}
+@theme {
+  --spacing: 1px;
+  --color-darkbox: #131313;
+  --color-lightbox: #d4d4d4;
+  --color-primary: var(--primary-color);
+  --default-transition-duration: 0.7s;
+}
+body {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 300;
+}
+
+/* Button */
+.btn-primary {
+  @apply flex relative font-medium items-center cursor-pointer gap-10 bg-primary md:text-lg text-sm md:py-15 py-15 md:px-30 px-25 rounded-full text-white;
+  span:nth-child(3) {
+    clip-path: shape(from 76.09% 56.25%,hline to 0%,vline by -12.5%,hline by 76.09%,line to 41.09% 8.75%,line by 8.91% -8.75%,line by 50% 50%,line by -50% 50%,line by -8.91% -8.75%,line by 35% -35%,close);
+    @apply flex bg-white aspect-1/1 h-16 transform translate-x-0 opacity-100 transition-all ease-out;
+  }
+  span:nth-child(1) {
+    clip-path: shape(from 76.09% 56.25%,hline to 0%,vline by -12.5%,hline by 76.09%,line to 41.09% 8.75%,line by 8.91% -8.75%,line by 50% 50%,line by -50% 50%,line by -8.91% -8.75%,line by 35% -35%,close);
+    @apply bg-white absolute aspect-1/1 h-16 transform opacity-0 -translate-x-16 transition-all ease-out;
+  }
+  span:nth-child(2) {
+    @apply transform translate-x-0 transition-all ease-out;
+  }
+  &:hover > span:nth-child(3) {
+    @apply transform translate-x-16 opacity-0;
+  }
+  &:hover > span:nth-child(1) {
+    @apply -translate-x-0 opacity-100 delay-200;
+  }
+  &:hover > span:nth-child(2) {
+    @apply transform translate-x-26 delay-100;
+  }
+}
+.btn-secondary {
+  @apply flex relative font-medium items-center cursor-pointer gap-10 border-2 md:border-3 border-primary md:text-lg text-sm md:py-15 py-15 md:px-30 px-25 rounded-full;
+  span:nth-child(3) {
+    clip-path: shape(from 76.09% 56.25%,hline to 0%,vline by -12.5%,hline by 76.09%,line to 41.09% 8.75%,line by 8.91% -8.75%,line by 50% 50%,line by -50% 50%,line by -8.91% -8.75%,line by 35% -35%,close);
+    @apply flex bg-black dark:bg-white aspect-1/1 h-16 transform translate-x-0 opacity-100 transition-all ease-out;
+  }
+  span:nth-child(1) {
+    clip-path: shape(from 76.09% 56.25%,hline to 0%,vline by -12.5%,hline by 76.09%,line to 41.09% 8.75%,line by 8.91% -8.75%,line by 50% 50%,line by -50% 50%,line by -8.91% -8.75%,line by 35% -35%,close);
+    @apply bg-black dark:bg-white absolute aspect-1/1 h-16 transform opacity-0 -translate-x-16 transition-all ease-out;
+  }
+  span:nth-child(2) {
+    @apply transform translate-x-0 transition-all dark:text-white text-black ease-out;
+  }
+  &:hover > span:nth-child(3) {
+    @apply transform translate-x-16 opacity-0;
+  }
+  &:hover > span:nth-child(1) {
+    @apply -translate-x-0 opacity-100 delay-200;
+  }
+  &:hover > span:nth-child(2) {
+    @apply transform translate-x-26 delay-100;
+  }
+}
+
+/* nav active */
+.active {
+  @apply text-primary after:w-full
+}
+
+/* odometer animation */
+.odometer.odometer-auto-theme .odometer-ribbon-inner, .odometer.odometer-theme-default .odometer-ribbon-inner {
+  transition-duration: 5s !important;
+}
+
+/* swiper slider */
+.swiper-slide-active {
+  @apply border-1 lg:border-2 border-primary/50 transition-all;
+}
+
+/* toast */
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  90% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+.fade-in-out {
+  animation: fadeInOut 2.5s ease-in-out forwards;
+}

@@ -1,0 +1,47 @@
+[
+  {
+    "title": "Basic",
+    "price": "$1200",
+    "badge": null,
+    "priceUnit": "/Month",
+    "description": "Description of the tier list will go here, copy should be concise and impactful.",
+    "features": [
+      "5 Social Media Account",
+      "Free Platform Access",
+      "24/7 Customer Support",
+      "UI UX Design",
+      "Life time support"
+    ]
+  },
+  {
+    "title": "Standard",
+    "price": "$1900",
+    "badge": "Most Popular",
+    "priceUnit": "/Month",
+    "description": "Description of the tier list will go here, copy should be concise and impactful.",
+    "features": [
+      "5 Social Media Account",
+      "Free Platform Access",
+      "24/7 Customer Support",
+      "24/7 Customer Support",
+      "24/7 Customer Support",
+      "24/7 Customer Support",
+      "UI UX Design",
+      "Life time support"
+    ]
+  },
+  {
+    "title": "Premium",
+    "price": "$2700",
+    "badge": null,
+    "priceUnit": "/Month",
+    "description": "Description of the tier list will go here, copy should be concise and impactful.",
+    "features": [
+      "5 Social Media Account",
+      "Free Platform Access",
+      "24/7 Customer Support",
+      "UI UX Design",
+      "Life time support"
+    ]
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "degree": "B.Sc in Computer Science",
+    "institution": "Dhaka University",
+    "year": "2018 – 2022",
+    "description": "Studied various aspects of computer science including algorithms, data structures, and software engineering."
+  },
+  {
+    "degree": "M.Sc in Software Engineering",
+    "institution": "Dhaka University",
+    "year": "2022 – 2024",
+    "description": "Focused on advanced software development methodologies and project management."
+  },
+  {
+    "degree": "Web Development Bootcamp",
+    "institution": "Online Course",
+    "year": "2023",
+    "description": "Completed a comprehensive bootcamp covering HTML, CSS, JavaScript, and modern web frameworks."
+  }
+]

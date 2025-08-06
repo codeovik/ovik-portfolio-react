@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Adrian Hayes",
+    "company": "Rossi Ventures",
+    "imageLink": "/assets/images/client-1.png",
+    "rating": 3,
+    "review": "Absolutely professional from start to finish. He took our rough wireframes and transformed them into a fully polished, stunning website. Communication was clear and consistent throughout. I’d highly recommend him to anyone in need of top-quality web development."
+  },
+  {
+    "name": "Ethan Blake",
+    "company": "TechNova Ltd.",
+    "imageLink": "/assets/images/client-2.png",
+    "rating": 4,
+    "review": "Working with him was a smooth and pleasant experience. He always delivered work on time and offered practical suggestions that made the final product even better. His attention to detail and professionalism really stood out."
+  },
+  {
+    "name": "Camila Jensen",
+    "company": "Rahman Interiors",
+    "imageLink": "/assets/images/client-3.png",
+    "rating": 5,
+    "review": "Our company website now looks sleek, modern, and highly functional thanks to his excellent design sense. He was responsive and easy to work with during the whole process. The outcome exceeded our expectations."
+  },
+  {
+    "name": "Mateo Alvarez",
+    "company": "Mendez Solutions",
+    "imageLink": "/assets/images/client-4.png",
+    "rating": 3,
+    "review": "Good work overall with a strong understanding of the project. There were a few delays in communication, but the end result was satisfying. He eventually delivered a solid and functional website."
+  },
+  {
+    "name": "Sienna Brooks",
+    "company": "Tan Tech",
+    "imageLink": "/assets/images/client-5.png",
+    "rating": 2,
+    "review": "He really knows his stuff and brings great ideas to the table. The attention to detail and care he gave to our project was impressive. We’re very happy with the outcome and his support throughout."
+  },
+  {
+    "name": "Logan Bennett",
+    "company": "Smith & Co. Marketing",
+    "imageLink": "/assets/images/client-6.png",
+    "rating": 1,
+    "review": "A solid and skilled developer who helped us optimize our landing page performance significantly. He worked efficiently and met the deadlines. I would definitely consider working with him again."
+  },
+  {
+    "name": "Aria Thompson",
+    "company": "Mila Fashion House",
+    "imageLink": "/assets/images/client-7.png",
+    "rating": 5,
+    "review": "Outstanding work with a creative touch and fast turnaround time. The site is exactly what we needed — mobile-friendly, elegant, and easy to navigate. I’ll gladly work with him again."
+  },
+  {
+    "name": "Julian Carter",
+    "company": "Lee Architecture",
+    "imageLink": "/assets/images/client-8.png",
+    "rating": 4,
+    "review": "Very responsive and professional throughout the entire process. He took all of our feedback seriously and incorporated it well. The final design fit our brand identity perfectly."
+  },
+  {
+    "name": "Zara Mitchell",
+    "company": "Noor Consulting",
+    "imageLink": "/assets/images/client-9.png",
+    "rating": 5,
+    "review": "It was an amazing experience from start to finish. He was patient, flexible, and went above and beyond to deliver a website that exceeded our expectations. Highly recommended for any business."
+  }
+]

@@ -1,0 +1,12 @@
+[
+  { "name": "HTML", "percent": 90 },
+  { "name": "CSS", "percent": 95 },
+  { "name": "JavaScript", "percent": 60 },
+  { "name": "React", "percent": 45 },
+  { "name": "Node.js", "percent": 40 },
+  { "name": "Python", "percent": 69 },
+  { "name": "PHP", "percent": 30 },
+  { "name": "Java", "percent": 95 },
+  { "name": "C++", "percent": 72 },
+  { "name": "Godot", "percent": 60 }
+]
