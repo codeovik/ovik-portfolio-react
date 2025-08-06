@@ -1,0 +1,98 @@
+[
+  {
+    "title": "EduSpark Online Learning Platform UIUX Design",
+    "category": "UI/UX Design",
+    "imageLink": "/assets/images/portfolio-edu-spark.png",
+    "description": "<p><strong>EduSpark</strong> is an advanced online learning platform where students, mentors, and institutions connect in a seamless digital ecosystem. I was hired to design its full UI/UX experience – starting from user flows to final hi-fi prototypes using Figma.</p><br><p>The challenge was to maintain a clean yet modern look while catering to different user roles like Students, Instructors, and Admins. I developed over <strong>25+ responsive screens</strong> including course listing, progress tracking dashboard, live session interface, and certification pages.</p><br><p>The design ensures <i>accessibility</i> with proper color contrast, keyboard navigation, and mobile-first responsiveness. The use of modular design components allowed for rapid development and easy future scaling.</p><br><p>I also created a design system with <strong>brand typography, color palette, reusable components, spacing guide</strong>, and iconography for the dev team to implement consistently.</p><br><p>Tools used: <strong>Figma, FigJam, Lucidchart</strong></p><br><p>The client was thrilled with the clarity and usability, and the product received over <strong>1,000 signups</strong> in the first week of soft launch.</p>",
+    "videoLink": "https://www.youtube.com/embed/eduui456",
+    "details": {
+      "portfolioTyoe": "UI/UX Design",
+      "clint": "NextGen Tech",
+      "date": "18 July, 2025 16:12:10",
+      "locaton": "Chittagong, Bangladesh",
+      "cost": "$950",
+      "duration": "7 days"
+    },
+    "tags": ["uiux", "figma", "design system", "elearning", "accessible", "modern"]
+  },
+  {
+    "title": "FastFoodX – Restaurant Website with React & Tailwind",
+    "category": "Web Development",
+    "imageLink": "/assets/images/portfolio-fast-food.png",
+    "description": "<p><strong>FastFoodX</strong> is a fast-food chain in Bangladesh that wanted a sleek and modern online presence. I developed their full website using <strong>React, Tailwind CSS, and JSON-based content</strong> to ensure flexibility and performance.</p><br><p>The website includes interactive sections such as a real-time <strong>menu filtering system</strong>, <i>online reservation form with validation</i>, testimonials slider (with Swiper.js), a blog section, and image gallery with modal zoom features.</p><br><p>One of the unique aspects of the site is its seamless dark/light mode toggle and <strong>SEO-focused meta tag integration</strong> on every route using `react-helmet`. I also added AOS animation to enhance user interaction without sacrificing speed.</p><br><p>The entire website is fully responsive and tested across <strong>mobile, tablet, and desktop</strong> devices. I also integrated a Firebase backend for contact form storage and admin-only food item updates in the future roadmap.</p><br><p>The site was delivered ahead of deadline, and their online orders increased by <strong>32%</strong> within two weeks of launch.</p>",
+    "videoLink": "https://www.youtube.com/embed/foodweb789",
+    "details": {
+      "portfolioTyoe": "Web Development",
+      "clint": "FastFoodX Ltd.",
+      "date": "10 June, 2025 13:45:20",
+      "locaton": "Sylhet, Bangladesh",
+      "cost": "$780",
+      "duration": "6 days"
+    },
+    "tags": ["react", "tailwind", "restaurant", "swiper", "responsive", "seo", "json"]
+  },
+  {
+    "title": "TravelBuddy – Mobile App for Budget Travelers",
+    "category": "App Development",
+    "imageLink": "/assets/images/portfolio-travel.png",
+    "description": "<p><strong>TravelBuddy</strong> is a cross-platform travel app built using <strong>React Native</strong> for both Android and iOS users. It helps budget travelers discover local attractions, plan trips, and book stays and transport at the best prices.</p><br><p>My role involved building the entire frontend structure using functional components, `react-navigation`, `redux-toolkit`, and integrating third-party APIs for maps, flight search, and hotel booking.</p><br><p>The UI was built with a clean minimalist approach with region-based theme changes (dark/light), multi-language support (English & Bengali), and offline mode caching using AsyncStorage.</p><br><p>Users can create profiles, save destinations, add reviews, and get personalized suggestions. Push notifications and in-app messaging features were added for better engagement.</p><br><p>I worked closely with the backend team to optimize data fetching using Axios and reduce app load time by 40%.</p><br><p>The final build was deployed via Expo and the app received 4.8★ rating on Play Store with over <strong>10,000 downloads</strong> in the first month.</p>",
+    "videoLink": "https://www.youtube.com/embed/travelapp998",
+    "details": {
+      "portfolioTyoe": "App Development",
+      "clint": "ExploreWorld Inc.",
+      "date": "28 May, 2025 09:30:00",
+      "locaton": "Remote, Global",
+      "cost": "$1200",
+      "duration": "12 days"
+    },
+    "tags": ["react native", "mobile app", "budget travel", "offline", "expo", "maps", "api"]
+  },
+  {
+    "title": "GreenRoot – Minimalist Eco Brand Logo & Identity Design",
+    "category": "Logo Design",
+    "imageLink": "/assets/images/portfolio-green-root.png",
+    "description": "<p><strong>GreenRoot</strong> is a startup focused on promoting organic farming and eco-conscious lifestyle products. They approached me to create a logo and brand identity that reflects their sustainability goals while staying minimal and timeless.</p><br><p>The client specifically wanted a design that combined a <i>plant leaf with geometric balance</i>, avoiding typical 'eco' clichés. After sketching multiple concepts, the final logo was crafted using Adobe Illustrator with a focus on <strong>clean typography, monoline iconography, and a natural green color palette (#4CAF50 & #2E7D32)</strong>.</p><br><p>The branding package included:<br>1. Primary + Secondary logo<br>2. Scalable icon version<br>3. Brand color palette<br>4. Typography guide<br>5. Print-ready assets (PDF, SVG, PNG)</p><br><p>I also delivered mockups for product packaging, letterhead, and business cards to ensure brand consistency.</p><br><p>The client loved the simplicity and uniqueness and is now using it across their social and product line. Feedback from their customers was overwhelmingly positive!</p>",
+    "videoLink": "https://www.youtube.com/embed/logo456gr",
+    "details": {
+      "portfolioTyoe": "Logo Design",
+      "clint": "GreenRoot Eco",
+      "date": "30 April, 2025 14:18:00",
+      "locaton": "Khulna, Bangladesh",
+      "cost": "$350",
+      "duration": "4 days"
+    },
+    "tags": ["logo", "branding", "eco", "minimal", "illustrator", "identity"]
+  },
+  {
+    "title": "CryptoX – Animated Landing Page for Blockchain Startup",
+    "category": "Web Development",
+    "imageLink": "/assets/images/portfolio-crypto.png",
+    "description": "<p><strong>CryptoX</strong> is a blockchain-based digital wallet startup targeting Gen-Z users. They needed a futuristic, animated landing page to promote their upcoming ICO launch. I built the entire landing experience using <strong>Vite + Tailwind CSS + GSAP</strong> to ensure fast performance and smooth scroll-based animations.</p><br><p>The landing page includes:</p><ul><li>Hero section with animated SVG waves</li><li>Scroll-triggered token info and pricing animations</li><li>Real-time counter showing ICO progress (with dummy API)</li><li>Trust section with partner logos and testimonials</li><li>Newsletter signup with validation and Firebase integration</li></ul><br><p>The site is <i>fully responsive</i> with a dark theme by default, using Tailwind’s `dark:` utilities and a toggle switch to change themes. I optimized assets and reduced page size to under 1.2MB for faster loading.</p><br><p>The client praised the speed, animation smoothness, and mobile experience. This project was later featured in a crypto design newsletter!</p>",
+    "videoLink": "https://www.youtube.com/embed/cryptox786",
+    "details": {
+      "portfolioTyoe": "Web Development",
+      "clint": "CryptoX Inc.",
+      "date": "15 May, 2025 11:00:00",
+      "locaton": "Remote",
+      "cost": "$990",
+      "duration": "5 days"
+    },
+    "tags": ["vite", "tailwind", "gsap", "crypto", "darkmode", "responsive", "firebase"]
+  },
+  {
+    "title": "TaskPilot – SaaS Productivity Dashboard UI",
+    "category": "UI/UX Design",
+    "imageLink": "/assets/images/portfolio-dashboard.png",
+    "description": "<p><strong>TaskPilot</strong> is a SaaS productivity tool for small teams, combining task management, calendar scheduling, and analytics. I was hired to design a complete dashboard UI that’s clean, scalable, and easy to navigate for non-tech users.</p><br><p>The dashboard features:</p><ul><li>Overview panels with charts (designed for real-time data)</li><li>Drag-and-drop task board (Kanban-style)</li><li>Calendar integration with color-coded events</li><li>Collaboration tools (team chat, file upload UI)</li></ul><br><p>I designed this in Figma using an 8pt grid, with consistent spacing, typography, and reusable components across 35+ screens. Light & dark themes were designed side by side to support user preferences.</p><br><p>I also created a design spec document and developer handoff using Figma’s inspect mode and interactive prototype. <strong>The client’s dev team delivered the MVP within 3 weeks of receiving my files</strong>, thanks to the modular design system I prepared.</p><br><p>This UI is now used by over 1,500 companies worldwide.</p>",
+    "videoLink": "https://www.youtube.com/embed/taskpilot123",
+    "details": {
+      "portfolioTyoe": "UI/UX Design",
+      "clint": "CloudHive Technologies",
+      "date": "5 June, 2025 19:25:00",
+      "locaton": "Dhaka, Bangladesh",
+      "cost": "$1100",
+      "duration": "9 days"
+    },
+    "tags": ["saas", "dashboard", "uiux", "figma", "task management", "darkmode", "productivity"]
+  }
+]

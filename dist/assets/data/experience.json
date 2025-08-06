@@ -1,0 +1,20 @@
+[
+  {
+    "position": "Frontend Developer",
+    "company": "Tech Solutions Ltd.",
+    "year": "2020 – 2022",
+    "description": "Developed responsive web applications using HTML, CSS, and JavaScript. Collaborated with designers."
+  },
+  {
+    "position": "Full Stack Developer",
+    "company": "Innovatech Inc.",
+    "year": "2022 – Present",
+    "description": "Worked on both frontend and backend development using React, Node.js, and MongoDB."
+  },
+  {
+    "position": "Freelance Web Developer",
+    "company": "Self-employed",
+    "year": "2018 – Present",
+    "description": "Provided web development services to various clients, focusing on custom website design and development."
+  }
+]
