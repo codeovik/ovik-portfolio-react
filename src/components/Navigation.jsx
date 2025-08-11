@@ -41,7 +41,7 @@ export default function Navigation() {
       <nav
         className={`w-full top-0 left-0 lg:h-80 md:h-90 h-70 flex items-center justify-between z-100 lg:px-60 px-30 transition-all duration-300 ${
           isScrolled
-            ? "bg-white/30 dark:bg-black/60 backdrop-blur-3xl shadow-md fixed"
+            ? "bg-white/80 dark:bg-black/80 backdrop-blur-3xl shadow-md fixed"
             : "bg-opacity-100 absolute"
         }`}
       >

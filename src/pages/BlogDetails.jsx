@@ -82,7 +82,7 @@ const BlogDetails = () => {
 
         <div className="grid gap-30 lg:grid-cols-[1fr_400px]">
           <div>
-              <div className="flex flex-col gap-40 rounded-2xl md:rounded-3xl bg-darkbox p-20">
+              <div className="flex flex-col gap-40 rounded-2xl md:rounded-3xl bg-lightbox dark:bg-darkbox p-20">
                 <h1 className="text-2xl md:text-4xl font-semibold">{blog.title}</h1>
                 <div
                   className="text-base space-y-5"
