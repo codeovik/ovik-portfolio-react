@@ -19,64 +19,64 @@ gsap.registerPlugin(SplitText);
 
 export default function Home() {
   // animation in hero section
-  useGSAP(() => {
-    document.fonts.ready.then(() => {
-      const heroSplitH1 = new SplitText("header h1 span", { type: "words" });
-      gsap.from(heroSplitH1.words, {
-        opacity: 0,
-        y: 100,
-        ease: "back.out(1.7)",
-        stagger: 0.4,
-        duration: 1,
-        delay: 1,
-      });
+  // useGSAP(() => {
+  //   document.fonts.ready.then(() => {
+  //     const heroSplitH1 = new SplitText("header h1 span", { type: "words" });
+  //     gsap.from(heroSplitH1.words, {
+  //       opacity: 0,
+  //       y: 100,
+  //       ease: "back.out(1.7)",
+  //       stagger: 0.4,
+  //       duration: 1,
+  //       delay: 1,
+  //     });
 
-      gsap.from('header h2', {
-        opacity: 0,
-        y: 100,
-        ease: "back.out(1.7)",
-        stagger: 0.4,
-        duration: 1,
-        delay: 2,
-      })
+  //     gsap.from('header h2', {
+  //       opacity: 0,
+  //       y: 100,
+  //       ease: "back.out(1.7)",
+  //       stagger: 0.4,
+  //       duration: 1,
+  //       delay: 2,
+  //     })
 
-      gsap.from('.subtitle', {
-        opacity: 0,
-        y: 100,
-        ease: "back.out(1.7)",
-        stagger: 0.4,
-        duration: 1,
-        delay: 3,
-      })
+  //     gsap.from('.subtitle', {
+  //       opacity: 0,
+  //       y: 100,
+  //       ease: "back.out(1.7)",
+  //       stagger: 0.4,
+  //       duration: 1,
+  //       delay: 3,
+  //     })
 
-      gsap.from('.buttonContainer button', {
-        opacity: 0,
-        y: 100,
-        ease: "back.out(1.7)",
-        stagger: 0.4,
-        duration: 1,
-        delay: 4,
-      })
+  //     gsap.from('.buttonContainer button', {
+  //       opacity: 0,
+  //       y: 100,
+  //       ease: "back.out(1.7)",
+  //       stagger: 0.4,
+  //       duration: 1,
+  //       delay: 4,
+  //     })
 
-      gsap.from('.socialTitle', {
-        opacity: 0,
-        y: 100,
-        ease: "back.out(1.7)",
-        stagger: 0.4,
-        duration: 1,
-        delay: 4.5,
-      })
+  //     gsap.from('.socialTitle', {
+  //       opacity: 0,
+  //       y: 100,
+  //       ease: "back.out(1.7)",
+  //       stagger: 0.4,
+  //       duration: 1,
+  //       delay: 4.5,
+  //     })
 
-      gsap.from('.social', {
-        opacity: 0,
-        y: 100,
-        ease: "back.out(1.7)",
-        stagger: 0.4,
-        duration: 1,
-        delay: 5,
-      })
-    });
-  }, []);
+  //     gsap.from('.social', {
+  //       opacity: 0,
+  //       y: 100,
+  //       ease: "back.out(1.7)",
+  //       stagger: 0.4,
+  //       duration: 1,
+  //       delay: 5,
+  //     })
+  //   });
+  // }, []);
 
   // cv pop up
   const [cvModal, setCvModal] = useState(false);
@@ -150,11 +150,11 @@ export default function Home() {
           <img className='rounded-2xl object-cover' src={hero} alt="hero image" />
         </Tilt>
         <div className='flex flex-col justify-center'>
-          <h1 className="lg:text-7xl md:text-7xl text-5xl mt-20 lg:mt-0 dark:text-white text-black font-bold">
+          <h1 className="lg:text-7xl md:text-7xl text-5xl mt-20 lg:mt-0 dark:text-white text-black font-semibold">
             <span className="">Hello, I am </span>
-            <span className="font-extrabold text-primary">Ovik</span>
+            <span className="font-bold text-primary">Ovik</span>
           </h1>
-          <h2 className="lg:text-5xl font-bold md:text-5xl flex gap-7 text-3xl w-max dark:text-white text-black mt-20 lg:mt-10 ">
+          <h2 className="lg:text-5xl font-medium md:text-5xl flex gap-7 text-3xl w-max dark:text-white text-black mt-20 lg:mt-10 ">
             <span>I'm a </span>
             <p className="text-primary">
               <Typewriter
@@ -230,13 +230,13 @@ export default function Home() {
 
       {/* 4 Portfolio */}
       <section className="max-w-[1400px] mx-auto px-20 md:px-40 lg:mt-150 mt-100 lg:px-40 text-black dark:text-white">
-        <h2 className="text-center font-bold lg:text-7xl md:text-6xl text-4xl mb-10">Recent Projects</h2>
+        <h2 className="text-center font-semibold lg:text-7xl md:text-6xl text-4xl mb-10">Recent Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
           {portfolio.map((e, index) => (
             <Link
               to={`/portfolio/${e.title.toLowerCase().replace(/\s+/g, '-')}`}
               key={index}
-              className="lg:p-20 opacity-0 p-10 rounded-2xl group md:rounded-3xl bg-lightbox dark:bg-darkbox border-2 md:border-3 border-white/5 cursor-pointer hover:border-primary/50 transition-all"
+              className="lg:p-20 p-10 rounded-2xl group md:rounded-3xl bg-lightbox dark:bg-darkbox border-2 md:border-3 border-white/5 cursor-pointer hover:border-primary/50 transition-all"
             >
               <div className="overflow-hidden md:rounded-3xl rounded-2xl aspect-4/3">
                 <img
@@ -266,7 +266,7 @@ export default function Home() {
 
       {/* blog */}
       <section className="max-w-[1400px] mx-auto px-20 md:px-40 lg:mt-150 mt-100 lg:px-40 text-black dark:text-white">
-        <h2 className="text-center font-bold lg:text-7xl md:text-6xl text-4xl mb-10">Recent Blogs</h2>
+        <h2 className="text-center font-semibold lg:text-7xl md:text-6xl text-4xl mb-10">Recent Blogs</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
           {blog.map((e, index) => (
             <Link

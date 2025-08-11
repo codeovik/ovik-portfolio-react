@@ -39,7 +39,7 @@ const SkillSection = () => {
 
   return (
     <section className="lg:mt-150 mt-100 text-black dark:text-white max-w-[1400px] mx-auto md:px-40 px-20 lg:px-40">
-      <h2 className="text-center font-bold lg:text-7xl md:text-6xl text-4xl skillTitle">
+      <h2 className="text-center font-semibold lg:text-7xl md:text-6xl text-4xl skillTitle">
         What I’m Good At?
       </h2>
 

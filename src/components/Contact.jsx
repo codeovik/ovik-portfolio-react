@@ -8,7 +8,7 @@ gsap.registerPlugin(SplitText);
 export default function Contact() {
   return (
     <section className="lg:mt-150 mt-100 text-black dark:text-white max-w-[1400px] mx-auto px-20 md:px-40">
-      <h2 className="text-center font-bold lg:text-7xl md:text-6xl text-4xl mb-10">Get in Touch</h2>
+      <h2 className="text-center font-semibold lg:text-7xl md:text-6xl text-4xl mb-10">Get in Touch</h2>
       <div className="grid lg:grid-cols-[2fr_1fr] gap-40">
         <form action="https://formsubmit.co/ovikbiswas01@gmail.com" method="POST" className="dark:bg-darkbox transition-all bg-lightbox md:p-40 p-20 rounded-2xl md:rounded-3xl md:grid flex flex-col md:grid-cols-2 gap-20 border-2 md:border-3 border-black/5 dark:border-white/5 hover:border-primary/50">
           {/* Email send config */}

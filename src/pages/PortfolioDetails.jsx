@@ -57,7 +57,7 @@ const PortfolioDetails = () => {
   return (
     <>
       <header className='overflow-hidden h-400 relative top-0 flex items-center justify-center px-20 md:px-40 flex-col gap-20'>
-        <h1 className='text-4xl md:text-8xl font-bold dark:text-white'>portfolio Details</h1>
+        <h1 className='text-4xl md:text-8xl font-bold dark:text-white'>Portfolio Details</h1>
         <p className="dark:text-white md:text-xl text-xs font-bold flex gap-5 items-center">
           <Link to='/' className='flex items-center flex-row fill-primary gap-2'>
             Home

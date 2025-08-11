@@ -46,10 +46,10 @@ export default function FAQ() {
         ))}
       </div>
 
-      <h2 className="hidden lg:block text-8xl lg:font-bold order-1 transition-all">
+      <h2 className="hidden lg:block text-8xl lg:font-semibold order-1 transition-all">
         Most<br />asked<br />questions
       </h2>
-      <h2 className="text-center font-bold lg:hidden md:text-6xl md:font-bold text-4xl mb-10">
+      <h2 className="text-center font-semibold lg:hidden md:text-6xl md:font-bold text-4xl mb-10">
         Most asked questions
       </h2>
     </section>

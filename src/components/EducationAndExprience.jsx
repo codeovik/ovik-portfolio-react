@@ -24,11 +24,11 @@ const EduExpSection = () => {
       
       {/* Education Section */}
       <div className="flex flex-col gap-10 lg:gap-20 transition-all" id="education-container">
-        <h2 className="font-bold eduCard opacity-0 lg:text-7xl md:text-6xl text-4xl text-center md:text-left">Education</h2>
+        <h2 className="font-semibold eduCard lg:text-7xl md:text-6xl text-4xl text-center md:text-left">Education</h2>
         {education.map((edu, i) => (
           <div
             key={i}
-            className="bg-lightbox eduCard opacity-0 border-2 md:border-3 border-black/5 dark:border-white/5 hover:border-primary/50 dark:bg-darkbox rounded-2xl md:rounded-3xl p-20 lg:p-40 transition-all"
+            className="bg-lightbox eduCard border-2 md:border-3 border-black/5 dark:border-white/5 hover:border-primary/50 dark:bg-darkbox rounded-2xl md:rounded-3xl p-20 lg:p-40 transition-all"
           >
             <h2 className="lg:text-3xl text-xl font-extrabold transition-all">{edu.degree}</h2>
             <div className="flex justify-between mb-10 opacity-70 lg:mb-15 font-medium text-white/80">
@@ -45,11 +45,11 @@ const EduExpSection = () => {
 
       {/* Experience Section */}
       <div className="flex flex-col gap-10 lg:gap-20 transition-all" id="exprience-container">
-        <h2 className="font-bold eduCard opacity-0 lg:text-7xl md:text-6xl text-4xl text-center md:text-left">Experience</h2>
+        <h2 className="font-semibold eduCard lg:text-7xl md:text-6xl text-4xl text-center md:text-left">Experience</h2>
         {experience.map((exp, i) => (
           <div
             key={i}
-            className="bg-lightbox eduCard opacity-0 border-2 md:border-3 border-black/5 dark:border-white/5 hover:border-primary/50 dark:bg-darkbox rounded-2xl md:rounded-3xl p-20 lg:p-40 transition-all"
+            className="bg-lightbox eduCard border-2 md:border-3 border-black/5 dark:border-white/5 hover:border-primary/50 dark:bg-darkbox rounded-2xl md:rounded-3xl p-20 lg:p-40 transition-all"
           >
             <h2 className="lg:text-3xl text-xl font-extrabold transition-all">{exp.position}</h2>
             <div className="flex justify-between font-medium mb-10 opacity-70 lg:mb-15 text-white/80 text-xl">
