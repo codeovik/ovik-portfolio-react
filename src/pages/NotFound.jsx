@@ -11,7 +11,8 @@ export default function NotFound() {
       <p className="">
         There is no page like <span className="font-mono text-primary">{window.location.href}</span>
       </p>
-      <Link to="/" className="text-blue-500 hover:underline">Return to Home</Link>
+      {/* <Link to="/" className="text-blue-500 hover:underline">Return to Home</Link> */}
+      <Link to='/' className="btn-primary"><span></span><span>Go Home</span><span></span></Link>
     </div>
   )
 }

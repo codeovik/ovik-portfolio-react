@@ -3,7 +3,6 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import 'odometer/themes/odometer-theme-default.css';
 import Odometer from 'odometer';
-
 gsap.registerPlugin(ScrollTrigger);
 
 const Milestone = () => {
@@ -77,7 +76,7 @@ const Milestone = () => {
           </h2>
           <p className="lg:text-6xl md:text-5xl text-3xl font-semibold font-myfont">Years Of Experience</p>
         </div>
-        <p className="text-sm lg:text-lg lg:mt-8 mt-4 transition-all">
+        <p className="text-sm md:text-lg lg:mt-8 mt-4 transition-all">
           Business consulting consultants provide expert advice and guide businesses to help improve their performance and efficiency.
         </p>
       </article>
@@ -98,7 +97,7 @@ const Milestone = () => {
                 </span>
               )}
             </h1>
-            <p className="dark:text-white/80 md:text-xl text-black/80 mt-2 transition-all">
+            <p className="dark:text-white/80 md:text-lg text-black/80 mt-2 transition-all">
               {e.label}
             </p>
           </article>

@@ -16,10 +16,10 @@ export default function ClientsReview() {
   return (
     <section className="lg:mt-150 mt-100 text-black dark:text-white max-w-[1400px] overflow-hidden mx-auto md:grid grid-cols-2 px-20 md:px-40">
       <div className="font-myfont">
-        <h2 className="font-medium lg:text-[105px] md:text-6xl font-myfont hidden md:block transition-all">
+        <h2 className="font-bold lg:text-[105px] md:text-6xl font-myfont hidden md:block transition-all">
           What our<br />Clients<br />Says?
         </h2>
-        <h2 className="text-center font-medium md:hidden text-5xl mb-10">
+        <h2 className="text-center font-bold md:hidden text-xl mb-10">
           What our Clients Says?
         </h2>
       </div>

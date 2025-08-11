@@ -4,21 +4,26 @@
 :root {
   --primary-color: #9b00e8;
 }
+@font-face {
+  font-family: "Montserrat Alternates";
+  src: url("/assets/fonts/main.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 @theme {
   --spacing: 1px;
   --color-darkbox: #131313;
   --color-lightbox: #d4d4d4;
   --color-primary: var(--primary-color);
-  --default-transition-duration: 0.7s;
+  --default-transition-duration: 0.5s;
 }
 body {
   font-family: "Montserrat Alternates", sans-serif;
-  font-weight: 300;
 }
 
 /* Button */
 .btn-primary {
-  @apply flex relative font-medium items-center cursor-pointer gap-10 bg-primary md:text-lg text-sm md:py-15 py-15 md:px-30 px-25 rounded-full text-white;
+  @apply flex relative font-bold items-center cursor-pointer gap-10 bg-primary md:text-lg text-sm md:py-15 py-15 md:px-30 px-25 rounded-full text-white;
   span:nth-child(3) {
     clip-path: shape(from 76.09% 56.25%,hline to 0%,vline by -12.5%,hline by 76.09%,line to 41.09% 8.75%,line by 8.91% -8.75%,line by 50% 50%,line by -50% 50%,line by -8.91% -8.75%,line by 35% -35%,close);
     @apply flex bg-white aspect-1/1 h-16 transform translate-x-0 opacity-100 transition-all ease-out;
@@ -41,7 +46,7 @@ body {
   }
 }
 .btn-secondary {
-  @apply flex relative font-medium items-center cursor-pointer gap-10 border-2 md:border-3 border-primary md:text-lg text-sm md:py-15 py-15 md:px-30 px-25 rounded-full;
+  @apply flex relative font-bold items-center cursor-pointer gap-10 border-2 md:border-3 border-primary md:text-lg text-sm md:py-15 py-15 md:px-30 px-25 rounded-full;
   span:nth-child(3) {
     clip-path: shape(from 76.09% 56.25%,hline to 0%,vline by -12.5%,hline by 76.09%,line to 41.09% 8.75%,line by 8.91% -8.75%,line by 50% 50%,line by -50% 50%,line by -8.91% -8.75%,line by 35% -35%,close);
     @apply flex bg-black dark:bg-white aspect-1/1 h-16 transform translate-x-0 opacity-100 transition-all ease-out;

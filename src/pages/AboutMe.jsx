@@ -8,8 +8,8 @@ export default function AboutMe() {
   return (
     <>
         <header className='overflow-hidden h-400 relative top-0 flex items-center justify-center flex-col gap-10'>
-            <h1 className='text-6xl md:text-8xl font-medium dark:text-white'>About Me</h1>
-            <p className="dark:text-white text-xl font-medium flex gap-5 items-center">
+            <h1 className='text-6xl md:text-8xl font-bold dark:text-white'>About Me</h1>
+            <p className="dark:text-white text-xl font-bold flex gap-5 items-center">
                 <Link to='/' className='flex items-center flex-row fill-primary gap-2'>
                   Home
                 </Link>

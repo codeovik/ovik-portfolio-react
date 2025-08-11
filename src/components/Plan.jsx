@@ -26,7 +26,7 @@ export default function Pricing() {
     <section
       className="lg:mt-150 mt-100 text-black font-myfont dark:text-white max-w-[1400px] mx-auto px-20 lg:px-40"
     >
-      <h2 className="text-center font-medium lg:text-7xl md:text-6xl text-5xl mb-10">
+      <h2 className="text-center font-bold lg:text-7xl md:text-6xl text-4xl mb-10">
         My Pricing Plan
       </h2>
 

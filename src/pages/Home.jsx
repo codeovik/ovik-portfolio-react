@@ -11,25 +11,86 @@ import Contact from '../components/Contact';
 import ClientsReview from '../components/ClientsReview';
 import Plan from '../components/Plan';
 import Faq from '../components/Faq';
-// import gsap from 'gsap';
-// import { useGSAP } from '@gsap/react';
-// import { SplitText } from 'gsap/all';
-// gsap.registerPlugin(SplitText);
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { SplitText } from 'gsap/all';
+gsap.registerPlugin(SplitText);
 
 export default function Home() {
-  // text animation
-  // useGSAP(() => {
-  //   document.fonts.ready.then(() => {
-  //     const heroSplitH1 = new SplitText("header h1 span", { type: "words" });
-  //     gsap.from(heroSplitH1.words, {
-  //       opacity: 0,
-  //       y: 100,
-  //       ease: "back.out(1.7)",
-  //       stagger: 0.4,
-  //       duration: 1,
-  //     });
-  //   });
-  // }, []);
+  // animation in hero section
+  useGSAP(() => {
+    // document.fonts.ready.then(() => {
+      const heroSplitH1 = new SplitText("header h1 span", { type: "words" });
+      gsap.from(heroSplitH1.words, {
+        opacity: 0,
+        y: 100,
+        ease: "back.out(1.7)",
+        stagger: 0.4,
+        duration: 1,
+        delay: 1,
+      });
+
+      gsap.from('header h2', {
+        opacity: 0,
+        y: 100,
+        ease: "back.out(1.7)",
+        stagger: 0.4,
+        duration: 1,
+        delay: 2,
+      })
+
+      gsap.from('.subtitle', {
+        opacity: 0,
+        y: 100,
+        ease: "back.out(1.7)",
+        stagger: 0.4,
+        duration: 1,
+        delay: 3,
+      })
+
+      gsap.from('.buttonContainer button', {
+        opacity: 0,
+        y: 100,
+        ease: "back.out(1.7)",
+        stagger: 0.4,
+        duration: 1,
+        delay: 4,
+      })
+
+      gsap.from('.socialTitle', {
+        opacity: 0,
+        y: 100,
+        ease: "back.out(1.7)",
+        stagger: 0.4,
+        duration: 1,
+        delay: 4.5,
+      })
+
+      gsap.from('.social', {
+        opacity: 0,
+        y: 100,
+        ease: "back.out(1.7)",
+        stagger: 0.4,
+        duration: 1,
+        delay: 5,
+      })
+
+      const heroSplitH2 = new SplitText(".portfolioinhome h2", { type: "words" });
+      gsap.from(heroSplitH2.words, {
+        opacity: 0,
+        y: 100,
+        ease: "back.out(1.7)",
+        stagger: 0.4,
+        duration: 1,
+        delay: 1,
+        scrollTrigger: {
+          trigger: "portfolioinhome h2",
+          toggleActions: "play none none none"
+        },
+      });
+    // });
+  }, []);
 
   // cv pop up
   const [cvModal, setCvModal] = useState(false);
@@ -95,6 +156,20 @@ export default function Home() {
     setTimeout(() => setShowToast(false), 2500);
   };
 
+  useEffect(() => {
+    // animation for other sections
+    gsap.to('.portfolioinhome a', {
+      opacity: 1,
+      delay: 1,
+      stagger: 0.5,
+      duration: 1,
+      scrollTrigger: {
+        trigger: ".portfolioinhome a",
+        toggleActions: "play none none none"
+      },
+    })
+  });
+
   return (
     <>
       <div className="h-70 md:h-90 lg:h-80"></div>
@@ -103,11 +178,11 @@ export default function Home() {
           <img className='rounded-2xl object-cover' src={hero} alt="hero image" />
         </Tilt>
         <div className='flex flex-col justify-center'>
-          <h1 className="lg:text-7xl md:text-7xl text-5xl mt-20 lg:mt-0 dark:text-white text-black font-medium ">
+          <h1 className="lg:text-7xl md:text-7xl text-5xl mt-20 lg:mt-0 dark:text-white text-black font-bold">
             <span className="">Hello, I am </span>
-            <span className="font-semibold text-primary">Avik</span>
+            <span className="font-extrabold text-primary">Ovik</span>
           </h1>
-          <h2 className="lg:text-5xl md:text-5xl flex gap-7 text-3xl w-max font-medium dark:text-white text-black mt-20 lg:mt-10 ">
+          <h2 className="lg:text-5xl font-bold md:text-5xl flex gap-7 text-3xl w-max dark:text-white text-black mt-20 lg:mt-10 ">
             <span>I'm a </span>
             <p className="text-primary">
               <Typewriter
@@ -121,14 +196,14 @@ export default function Home() {
               />
             </p>
           </h2>
-          <p className="subtitle text-sm md:text-xl lg:text-lg dark:text-white/80 text-black/80 my-15">
+          <p className="subtitle text-sm md:text-xl lg:text-base dark:text-white/80 text-black/80 my-15">
             A passionate web developer with a knack for creating stunning and functional websites. I love to explore new technologies and push the boundaries of web development.
           </p>
           <div className="flex gap-10 buttonContainer">
             <button onClick={() => setYtModal(true)} className="btn-primary"><span></span><span>Watch Demo</span><span></span></button>
             <button onClick={() => setCvModal(true)} className="btn-secondary"><span></span><span>Get CV</span><span></span></button>
           </div>
-          <p className="socialTitle text-sm font-bold md:text-xl lg:text-lg mt-15 dark:text-white">Follow me on:</p>
+          <p className="socialTitle text-sm font-bold md:text-xl lg:text-base mt-15 mb-5 dark:text-white">Follow me on:</p>
           <div className="social">
             <Social />
           </div>
@@ -182,14 +257,14 @@ export default function Home() {
       <EducationAndExprience />
 
       {/* 4 Portfolio */}
-      <section className="max-w-[1400px] mx-auto px-20 md:px-40 lg:mt-150 mt-100 lg:px-40 text-black dark:text-white">
-        <h2 className="text-center font-medium lg:text-7xl md:text-6xl text-5xl mb-10">Recent Projects</h2>
+      <section className="max-w-[1400px] mx-auto px-20 md:px-40 lg:mt-150 mt-100 lg:px-40 text-black dark:text-white portfolioinhome">
+        <h2 className="text-center font-bold lg:text-7xl md:text-6xl text-4xl mb-10">Recent Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
           {portfolio.map((e, index) => (
             <Link
               to={`/portfolio/${e.title.toLowerCase().replace(/\s+/g, '-')}`}
               key={index}
-              className="lg:p-20 p-10 rounded-2xl group md:rounded-3xl bg-lightbox dark:bg-darkbox border-2 md:border-3 border-white/5 cursor-pointer hover:border-primary/50 transition-all"
+              className="lg:p-20 opacity-0 p-10 rounded-2xl group md:rounded-3xl bg-lightbox dark:bg-darkbox border-2 md:border-3 border-white/5 cursor-pointer hover:border-primary/50 transition-all"
             >
               <div className="overflow-hidden md:rounded-3xl rounded-2xl aspect-4/3">
                 <img
@@ -219,7 +294,7 @@ export default function Home() {
 
       {/* blog */}
       <section className="max-w-[1400px] mx-auto px-20 md:px-40 lg:mt-150 mt-100 lg:px-40 text-black dark:text-white">
-        <h2 className="text-center font-medium lg:text-7xl md:text-6xl text-5xl mb-10">Recent Blogs</h2>
+        <h2 className="text-center font-bold lg:text-7xl md:text-6xl text-4xl mb-10">Recent Blogs</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
           {blog.map((e, index) => (
             <Link

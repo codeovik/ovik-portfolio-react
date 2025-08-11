@@ -17,7 +17,7 @@ const Footer = () => {
           <div className=''>
 
             {/* email, adress and location */}
-            <h2 className="font-medium text-3xl lg:text-5xl">Contact</h2>
+            <h2 className="font-bold text-3xl text-center md:text-left lg:text-5xl">Contact</h2>
             <ul className="lg:mt-20 mt-5 flex flex-col gap-20">
               <li className="flex items-center gap-5 text-base md:text-xl">
                 <div className="lg:h-50 h-40 aspect-square cursor-pointer flex items-center justify-center bg-black/5 hover:bg-black/15 dark:bg-white/5 dark:hover:bg-white/15 transition-all rounded-full">
@@ -42,7 +42,7 @@ const Footer = () => {
 
           {/* links in footer */}
           <div>
-            <h2 className="font-medium text-3xl lg:text-5xl">Site map</h2>
+            <h2 className="font-bold text-3xl lg:text-5xl text-center md:text-left">Site map</h2>
             <ul className="flex gap-x-20 text-sm lg:mt-20 mt-5 md:text-xl md:gap-x-30 lg:flex-col md:gap-y-10 footer-nav">
               <li><Link to="/" className='border-b-1'>Home</Link></li>
               <li><Link to="/about" className='border-b-1'>About me</Link></li>

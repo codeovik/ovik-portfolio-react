@@ -62,7 +62,7 @@ export default function Navigation() {
         <ul className="lg:flex gap-10 md:gap-15 hidden">
           <li>
             <NavLink
-              className="dark:text-white font-medium after:content-[''] after:w-0 hover:after:w-full after:transition-all after:rounded-full after:left-0 after:h-2 after:absolute relative after:bottom-0 after:bg-primary"
+              className="dark:text-white font-bold after:content-[''] after:w-0 hover:after:w-full after:transition-all after:rounded-full after:left-0 after:h-2 after:absolute relative after:bottom-0 after:bg-primary"
               to="/"
             >
               Home
@@ -70,7 +70,7 @@ export default function Navigation() {
           </li>
           <li>
             <NavLink
-              className="dark:text-white font-medium after:content-[''] after:w-0 hover:after:w-full after:transition-all after:rounded-full after:left-0 after:h-2 after:absolute relative after:bottom-0 after:bg-primary"
+              className="dark:text-white font-bold after:content-[''] after:w-0 hover:after:w-full after:transition-all after:rounded-full after:left-0 after:h-2 after:absolute relative after:bottom-0 after:bg-primary"
               to="/about"
             >
               About me
@@ -78,7 +78,7 @@ export default function Navigation() {
           </li>
           <li>
             <NavLink
-              className="dark:text-white font-medium after:content-[''] after:w-0 hover:after:w-full after:transition-all after:rounded-full after:left-0 after:h-2 after:absolute relative after:bottom-0 after:bg-primary"
+              className="dark:text-white font-bold after:content-[''] after:w-0 hover:after:w-full after:transition-all after:rounded-full after:left-0 after:h-2 after:absolute relative after:bottom-0 after:bg-primary"
               to="/blog"
             >
               Blog
@@ -86,7 +86,7 @@ export default function Navigation() {
           </li>
           <li>
             <NavLink
-              className="dark:text-white font-medium after:content-[''] after:w-0 hover:after:w-full after:transition-all after:rounded-full after:left-0 after:h-2 after:absolute relative after:bottom-0 after:bg-primary"
+              className="dark:text-white font-bold after:content-[''] after:w-0 hover:after:w-full after:transition-all after:rounded-full after:left-0 after:h-2 after:absolute relative after:bottom-0 after:bg-primary"
               to="/portfolio"
             >
               Portfolio
@@ -94,7 +94,7 @@ export default function Navigation() {
           </li>
           <li>
             <NavLink
-              className="dark:text-white font-medium after:content-[''] after:w-0 hover:after:w-full after:transition-all after:rounded-full after:left-0 after:h-2 after:absolute relative after:bottom-0 after:bg-primary"
+              className="dark:text-white font-bold after:content-[''] after:w-0 hover:after:w-full after:transition-all after:rounded-full after:left-0 after:h-2 after:absolute relative after:bottom-0 after:bg-primary"
               to="/contact"
             >
               Contact

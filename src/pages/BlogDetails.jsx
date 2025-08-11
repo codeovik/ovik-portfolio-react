@@ -22,7 +22,7 @@ const BlogDetails = () => {
   // last 4 blog json fetch
   const [recentBlog, setRecentBlog] = useState([]);
   useEffect(() => {
-    fetch("/data/blog.json")
+    fetch("/assets/data/blog.json")
       .then(res => res.json())
       .then(data => setRecentBlog(data.slice(-4)));
   }, []);
@@ -57,8 +57,8 @@ const BlogDetails = () => {
   return (
     <>
       <header className='overflow-hidden h-400 relative top-0 flex items-center justify-center flex-col px-20 md:px-40 gap-20'>
-        <h1 className='text-4xl md:text-8xl font-medium dark:text-white'>Blog Details</h1>
-        <p className="dark:text-white md:text-xl text-xs font-medium flex gap-5 items-center">
+        <h1 className='text-4xl md:text-8xl font-bold dark:text-white'>Blog Details</h1>
+        <p className="dark:text-white md:text-xl text-xs font-bold flex gap-5 items-center">
           <Link to='/' className='flex items-center flex-row fill-primary gap-2'>
             Home
           </Link>
