@@ -2,8 +2,6 @@ import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from '@gsap/react';
-import { SplitText } from 'gsap/all';
-gsap.registerPlugin(SplitText);
 gsap.registerPlugin(ScrollTrigger);
 
 const SkillSection = () => {
@@ -38,26 +36,6 @@ const SkillSection = () => {
       );
     });
   }, [skills]);
-
-  // text animation
-  useGSAP(() => {
-    document.fonts.ready.then(() => {
-      const heroSplitH1 = new SplitText(".skillTitle", { type: "words" });
-      gsap.from(heroSplitH1.words, {
-        opacity: 0,
-        y: 20,
-        ease: "back.out(1.7)",
-        stagger: 0.4,
-        delay: 0.5,
-        scrollTrigger: {
-          trigger: ".skillTitle",
-          // start: "top bottom",
-          toggleActions: "play none none none"
-        },
-        duration: 1,
-      });
-    });
-  }, []);
 
   return (
     <section className="lg:mt-150 mt-100 text-black dark:text-white max-w-[1400px] mx-auto md:px-40 px-20 lg:px-40">

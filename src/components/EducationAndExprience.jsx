@@ -19,21 +19,6 @@ const EduExpSection = () => {
       .then(data => setExperience(data));
   }, []);
 
-  useEffect(() => {
-    // animation
-    gsap.to('.eduCard', {
-      opacity: 1,
-      ease: "back.out(1.7)",
-      stagger: 0.4,
-      // delay: 3,
-      duration: 1,
-      scrollTrigger: {
-        trigger: ".eduCard",
-        toggleActions: "play none none none"
-      },
-    })
-  })
-
   return (
     <section className="lg:mt-150 mt-100 text-black font-myfont dark:text-white max-w-[1400px] mx-auto grid md:grid-cols-[1fr_2px_1fr] lg:grid-cols-[1fr_3px_1fr] gap-40 md:gap-20 lg:gap-40 px-20 md:px-40 lg:px-40">
       

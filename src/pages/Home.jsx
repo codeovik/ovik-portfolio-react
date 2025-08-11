@@ -20,7 +20,7 @@ gsap.registerPlugin(SplitText);
 export default function Home() {
   // animation in hero section
   useGSAP(() => {
-    // document.fonts.ready.then(() => {
+    document.fonts.ready.then(() => {
       const heroSplitH1 = new SplitText("header h1 span", { type: "words" });
       gsap.from(heroSplitH1.words, {
         opacity: 0,
@@ -75,21 +75,7 @@ export default function Home() {
         duration: 1,
         delay: 5,
       })
-
-      const heroSplitH2 = new SplitText(".portfolioinhome h2", { type: "words" });
-      gsap.from(heroSplitH2.words, {
-        opacity: 0,
-        y: 100,
-        ease: "back.out(1.7)",
-        stagger: 0.4,
-        duration: 1,
-        delay: 1,
-        scrollTrigger: {
-          trigger: "portfolioinhome h2",
-          toggleActions: "play none none none"
-        },
-      });
-    // });
+    });
   }, []);
 
   // cv pop up
@@ -130,7 +116,7 @@ export default function Home() {
       .then(data => setBlog(data.slice(0, 4)));
   }, []);
 
-  // relative time
+  // relative time for blog and portfolio articles
   function getRelativeTime(dateString) {
     const date = new Date(dateString);
     const now = new Date();
@@ -149,26 +135,12 @@ export default function Home() {
     return "Just now";
   }
 
-  // toast
+  // toast for cv download
   const [showToast, setShowToast] = useState(false);
   const handleDownload = () => {
     setShowToast(true);
     setTimeout(() => setShowToast(false), 2500);
   };
-
-  useEffect(() => {
-    // animation for other sections
-    gsap.to('.portfolioinhome a', {
-      opacity: 1,
-      delay: 1,
-      stagger: 0.5,
-      duration: 1,
-      scrollTrigger: {
-        trigger: ".portfolioinhome a",
-        toggleActions: "play none none none"
-      },
-    })
-  });
 
   return (
     <>
@@ -210,18 +182,18 @@ export default function Home() {
         </div>
       </header>
 
-      {/* cv pop up */}
+      {/* cv modal */}
       {cvModal && (
         <div onClick={() => setCvModal(false)} className='fixed inset-0 bg-white/60 dark:bg-black/50 backdrop-blur-3xl z-200 flex items-center justify-center'>
-          <div onClick={(e) => e.stopPropagation()} className="lg:w-2/3 w-[calc(100%-40px)] p-10 md:p-20 bg-lightbox dark:bg-darkbox rounded-2xl md:rounded-3xl border-black/15 dark:border-white/15 border-2 md:border-3">
+          <div onClick={(e) => e.stopPropagation()} className="lg:w-2/3 w-[calc(100%-40px)] p-20 bg-lightbox dark:bg-darkbox rounded-2xl md:rounded-3xl border-black/15 dark:border-white/15 border-2 md:border-3">
             <div className='flex justify-between items-center mb-15'>
               <h3 className="md:text-4xl text-2xl font-semibold dark:text-white">Get my cv</h3>
               <button onClick={() => setCvModal(false)} className='h-50 md:h-50 outline-2 md:outline-3 outline-black/15 dark:outline-white/15 hover:outline-primary/50 cursor-pointer aspect-square hover:scale-90 transition-all bg-black/10 dark:bg-white/10 flex hover:dark:bg-white/30 hover:bg-black/10 justify-center items-center rounded-full'>
                 <svg className='md:scale-150 scale-150 fill-black dark:fill-white' xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
               </button>
             </div>
-            <p className="dark:text-white">My CV is available for download in PDF format, or you can view the online version to get a quick yet comprehensive overview of my professional journey. It outlines my technical skills, work experience, education, and selected projects that demonstrate my expertise and passion for development. Whether you’re a recruiter looking for proven abilities or a collaborator exploring potential partnerships, this CV provides detailed insight into who I am as a developer. From frontend technologies like HTML, CSS, JavaScript, and React, to real-world projects and milestones, you’ll find a clear picture of my growth, dedication, and potential. Feel free to explore, download, or reach out for any queries.</p>
-            <div className="flex flex-col md:flex-row mt-20 gap-20 justify-center">
+            <p className="dark:text-white">My CV is available for download in PDF format, or you can view the online version for a quick overview of my professional journey. It highlights my technical skills, work experience, education, and key projects that showcase my expertise and dedication.</p>
+            <div className="flex flex-col md:flex-row mt-20 md:gap-20 gap-10 justify-center">
               <a onClick={handleDownload} href="/assets/files/cv.pdf" download className="bg-primary md:px-30 flex rounded-full py-15 justify-center font-bold text-white">Download<svg className="fill-white" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg></a>
               <a href="/assets/files/cv.pdf" target="_blank" className="border-3 md:px-30 border-primary text-black dark:text-white flex rounded-full py-15 justify-center font-bold">View Live<svg className="fill-black dark:fill-white" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="m216-160-56-56 464-464H360v-80h400v400h-80v-264L216-160Z"/></svg></a>
             </div>
@@ -229,7 +201,7 @@ export default function Home() {
         </div>
       )}
 
-      {/* toast */}
+      {/* cv download toast */}
       {showToast && (
         <div className="fixed right-40 bottom-40 bg-black text-white w-500 p-20 rounded-2xl shadow z-[9999] border-2 md:border-3 border-black/5 dark:border-white/5 hover:border-primary/50 transition-all fade-in-out">
           <h3 className="text-xl mb-10 font-semibold">CV download started. Thank you!</h3>
@@ -257,7 +229,7 @@ export default function Home() {
       <EducationAndExprience />
 
       {/* 4 Portfolio */}
-      <section className="max-w-[1400px] mx-auto px-20 md:px-40 lg:mt-150 mt-100 lg:px-40 text-black dark:text-white portfolioinhome">
+      <section className="max-w-[1400px] mx-auto px-20 md:px-40 lg:mt-150 mt-100 lg:px-40 text-black dark:text-white">
         <h2 className="text-center font-bold lg:text-7xl md:text-6xl text-4xl mb-10">Recent Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
           {portfolio.map((e, index) => (
