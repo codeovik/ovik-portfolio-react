@@ -43,12 +43,12 @@ const Footer = () => {
           {/* links in footer */}
           <div>
             <h2 className="font-bold text-3xl lg:text-5xl text-center md:text-left">Site map</h2>
-            <ul className="flex gap-x-20 text-sm lg:mt-20 mt-5 md:text-xl md:gap-x-30 lg:flex-col md:gap-y-10 footer-nav">
-              <li><Link to="/" className='border-b-1'>Home</Link></li>
-              <li><Link to="/about" className='border-b-1'>About me</Link></li>
-              <li><Link to="/blog" className='border-b-1'>Blog</Link></li>
-              <li><Link to="/portfolio" className='border-b-1'>Portfolio</Link></li>
-              <li><Link to="/conact" className='border-b-1'>Contact</Link></li>
+            <ul className="flex group gap-x-20 text-sm lg:mt-20 mt-5 md:text-xl md:gap-x-30 lg:flex-col md:gap-y-10 footer-nav">
+              <li><Link to="/" className='hover:opacity-100 group-hover:opacity-40 opacity-100 transition-all'>Home</Link></li>
+              <li><Link to="/about" className='hover:opacity-100 group-hover:opacity-40 opacity-100 transition-all'>About me</Link></li>
+              <li><Link to="/blog" className='hover:opacity-100 group-hover:opacity-40 opacity-100 transition-all'>Blog</Link></li>
+              <li><Link to="/portfolio" className='hover:opacity-100 group-hover:opacity-40 opacity-100 transition-all'>Portfolio</Link></li>
+              <li><Link to="/conact" className='hover:opacity-100 group-hover:opacity-40 opacity-100 transition-all'>Contact</Link></li>
             </ul>
           </div>
         </div>
