@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import Lenis from "@studio-freight/lenis";
+import Lenis from 'lenis';
 
 export default function GoTopButton() {
   const [scrollProgressHeight, setScrollProgressHeight] = useState("0%");
@@ -8,7 +8,7 @@ export default function GoTopButton() {
 
   useEffect(() => {
     lenisRef.current = new Lenis({
-      duration: 0.4,
+      duration: 0.5,
       easing: (t) => t * (2 - t),
       smooth: true,
     });
