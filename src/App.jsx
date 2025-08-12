@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import Navigation from './components/Navigation.jsx'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import BgCursor from './components/BgCursor';
+import BackgroundCursor from './components/BackgroundCursor';
 import Footer from './components/Footer';
 import GoTop from './components/GoTop';
 import Portfolio from './pages/Portfolio';
@@ -13,34 +13,15 @@ import Blog from './pages/Blog'
 import BlogDetails from './pages/BlogDetails'
 import Thanks from './pages/Thanks'
 import NotFound from './pages/NotFound'
-import Lenis from "@studio-freight/lenis";
+import CursorFollower from './components/CursorFollower'
 
 function App() {
-  // Smooth scrolling with Lenis
-  const lenisRef = useRef();
-  useEffect(() => {
-    lenisRef.current = new Lenis({
-      duration: 0.3,
-      easing: (t) => t * (2 - t),
-      smooth: true,
-      // direction: 'vertical'
-    });
-    function raf(time) {
-      lenisRef.current.raf(time);
-      requestAnimationFrame(raf);
-    }
-    requestAnimationFrame(raf);
-    return () => {
-      lenisRef.current.destroy();
-    };
-  }, []);
-
   return (
     <>
       <Router>
         
         <Navigation />
-        <BgCursor />
+        <BackgroundCursor />
         <GoTop />
 
         <Routes>
@@ -55,6 +36,7 @@ function App() {
           <Route path="*" element={<NotFound />} />
         </Routes>
 
+        <CursorFollower />
         <Footer />
       </Router>
     </>

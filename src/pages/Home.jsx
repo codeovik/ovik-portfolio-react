@@ -236,7 +236,7 @@ export default function Home() {
             <Link
               to={`/portfolio/${e.title.toLowerCase().replace(/\s+/g, '-')}`}
               key={index}
-              className="lg:p-20 p-10 rounded-2xl group md:rounded-3xl bg-lightbox dark:bg-darkbox border-2 md:border-3 border-white/5 cursor-pointer hover:border-primary/50 transition-all"
+              className="lg:p-20 p-10 rounded-2xl group md:rounded-3xl bg-lightbox dark:bg-darkbox border-2 md:border-3 border-white/5 cursor-pointer hover:border-primary/50 transition-all portfolio"
             >
               <div className="overflow-hidden md:rounded-3xl rounded-2xl aspect-4/3">
                 <img

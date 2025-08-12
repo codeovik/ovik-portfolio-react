@@ -7,10 +7,9 @@ export default function GoTopButton() {
   const lenisRef = useRef(null);
 
   useEffect(() => {
-    // Lenis ইনিশিয়ালাইজ করা
     lenisRef.current = new Lenis({
-      duration: 1.2,
-      easing: (t) => t * (2 - t), // easeOutQuad
+      duration: 0.4,
+      easing: (t) => t * (2 - t),
       smooth: true,
     });
 
@@ -20,7 +19,6 @@ export default function GoTopButton() {
     }
     requestAnimationFrame(raf);
 
-    // Scroll ইভেন্ট হ্যান্ডলার (Lenis এর scrollY থেকে পড়ব)
     function handleScroll() {
       const scrollTop = lenisRef.current.scroll;
       const docHeight = document.documentElement.scrollHeight - window.innerHeight;
