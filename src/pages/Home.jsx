@@ -12,72 +12,10 @@ import ClientsReview from '../components/ClientsReview';
 import Plan from '../components/Plan';
 import Faq from '../components/Faq';
 import gsap from 'gsap';
-import { useGSAP } from '@gsap/react';
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SplitText } from 'gsap/all';
 gsap.registerPlugin(SplitText);
 
 export default function Home() {
-  // animation in hero section
-  // useGSAP(() => {
-  //   document.fonts.ready.then(() => {
-  //     const heroSplitH1 = new SplitText("header h1 span", { type: "words" });
-  //     gsap.from(heroSplitH1.words, {
-  //       opacity: 0,
-  //       y: 100,
-  //       ease: "back.out(1.7)",
-  //       stagger: 0.4,
-  //       duration: 1,
-  //       delay: 1,
-  //     });
-
-  //     gsap.from('header h2', {
-  //       opacity: 0,
-  //       y: 100,
-  //       ease: "back.out(1.7)",
-  //       stagger: 0.4,
-  //       duration: 1,
-  //       delay: 2,
-  //     })
-
-  //     gsap.from('.subtitle', {
-  //       opacity: 0,
-  //       y: 100,
-  //       ease: "back.out(1.7)",
-  //       stagger: 0.4,
-  //       duration: 1,
-  //       delay: 3,
-  //     })
-
-  //     gsap.from('.buttonContainer button', {
-  //       opacity: 0,
-  //       y: 100,
-  //       ease: "back.out(1.7)",
-  //       stagger: 0.4,
-  //       duration: 1,
-  //       delay: 4,
-  //     })
-
-  //     gsap.from('.socialTitle', {
-  //       opacity: 0,
-  //       y: 100,
-  //       ease: "back.out(1.7)",
-  //       stagger: 0.4,
-  //       duration: 1,
-  //       delay: 4.5,
-  //     })
-
-  //     gsap.from('.social', {
-  //       opacity: 0,
-  //       y: 100,
-  //       ease: "back.out(1.7)",
-  //       stagger: 0.4,
-  //       duration: 1,
-  //       delay: 5,
-  //     })
-  //   });
-  // }, []);
-
   // cv pop up
   const [cvModal, setCvModal] = useState(false);
   useEffect(() => {
@@ -219,7 +157,15 @@ export default function Home() {
                 <svg className='md:scale-150 scale-150 fill-black dark:fill-white' xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
               </button>
             </div>
-            <iframe className='aspect-video w-full rounded-2xl md:rounded-3xl' src="https://www.youtube.com/embed/H-rJIyfLtHg?si=Npq0PGO85PJXMnZm" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+            <iframe
+              className='aspect-video w-full rounded-2xl md:rounded-3xl'
+              src="https://www.youtube.com/embed/lvgtLoZqu2Q?si=8cz9w4gNaYnXGQev"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen>
+            </iframe>
           </div>
         </div>
       )}
