@@ -28,6 +28,7 @@ const CursorFollower = () => {
     <>
       <div
         ref={followerRef}
+        className="hidden lg:block"
         style={{
           position: "fixed",
           top: 0,
